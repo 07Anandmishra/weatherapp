@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(150, 175, 224);
+  padding-top: 50px;
+}
+.weather{
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  margin: 50px auto;
+  background: linear-gradient(130deg ,rgb(86,86,235),rgb(5,5,199));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width:767px) {
+  .weather{
+    width: 300px;
+  }
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input{
+  border:none;
+  outline: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgb(222,237,243);
+  color: black;
+  border-radius: 20px;
+  flex: 1;
+  margin-right:10px;
+}
+@media screen and (max-width:767px) {
+  .search input{
+   width: 200px;
+  }
+}
+.search button{
+ 
+  border: none;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media screen and (max-width:767px) {
+  .search button{
+ 
+    border: none;
+    outline: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+.search button img{
+  width: 17px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+
+.info img{
+  width: 150px;
+}
+
+.info h1{
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.info h2{
+  font-size: 35px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.detailes{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+margin-top: 50px;
+}
+@media screen and (max-width:767px) {
+  .detailes{
+    padding: 0px;
+    }
+}
+.detailes .col{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col img{
+  width: 50px;
+  margin-right: 10px;
+}
+.humidity, .wind{
+  font-size: 17px;
+}
+p{
+  padding: 3px 0px;
 }
