@@ -11,7 +11,7 @@ const Index = () => {
     name: "london",
     humidity: "10",
     speed: "2",
-    image:'image/sun.png'
+    image:'./image/sun.png'
   });
 
   const [input,setInput]=useState('')
