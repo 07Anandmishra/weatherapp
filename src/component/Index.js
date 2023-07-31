@@ -36,7 +36,7 @@ const Index = () => {
         else if(response.data.weather[0].main==='Drizzle'){
             imgpath='image/drizzling.png'
         }else if(response.data.weather[0].main==='Mist'){
-            imgpath='image/mist.png'
+            imgpath='image/1.png'
         }else{
             imgpath='image/cloudsun.png'
         }
